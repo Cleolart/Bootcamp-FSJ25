@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/menu-responsive.css"> <!--This is the menu-->
+    <link rel="icon" href="./assets/img/favicon-svg.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+</head>
+<body>
+        <!-- HEADER RESPONSIVE -->
+        <header class="responsive-header">
+        <div class="img-container-responsive">
+            <div class="img-logo-container">
+                <img class="img-logo-responsive" src="./assets/img/logo-svg-lightmode.svg" alt="logo-catering-services"/>
+            </div>
+            <div class="burger-container">
+                
+                <label for="menu-toggle" class="burger-icon">
+                    <i class="fa-solid fa-bars fa-3x"></i>
+                </label>
+            </div>
+        </div>
+        <input type="checkbox" id="menu-toggle">
+        <nav class="navbar-responsive">
+            <ul class="ul-navbar-responsive">
+                <li><a class="nav-item-r" href="#">Home</a></li>
+                <li><a class="nav-item-r" href="#">Recipes</a></li>
+                <li><a class="nav-item-r" href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- end Header responsive -->
+    <div class="container">
+
+        <!-- HEADER DESKTOP-->
+         <header class="header">
+            <section class="img-container">
+                <img class="img-logo" src="./assets/img/logo-svg-lightmode.svg" alt="logo-catering-services">
+            </section>
+
+            <nav class="navbar">
+                    <a class="nav-item" href="#">Home</a>
+                    <a class="nav-item" href="#">Recipes</a>
+                    <a class="nav-item" href="#">Contact Us</a>
+            </nav>
+         </header>
+
+
+         <main class="main-container">
+            <section class="banner">
+                <div class="overlay"></div>
+                <h1 class="banner-title">Omelette Recipe</h1>
+            </section>
+
+            <section class="main-text-container">
+                    <h2>Classic Omelette</h2>
+            </section>
+
+            <!-- Cards section -->
+            <section class="main-card-container">
+                        <div class="card">
+                            <i class="fa-solid fa-blender custom-icon fa-3x"></i>
+                            <h4>PREP</h4>
+                            <h2>5 min</h2>
+
+                        </div>
+                        <div class="card">
+
+                            <i class="fa-solid fa-utensils custom-icon fa-3x"></i>
+                            <h4>COOK</h4>
+                            <h2>5 mins</h2>
+
+                        </div>
+                        <div class="card">
+                            <i class="fa-regular fa-clock custom-icon fa-3x"></i>
+                            <h4>TOTAL</h4>
+                            <h2>10 mins</h2>
+                      </div>
+            </section>
+            <!-- Instructions -->
+            <section class="proccess-text-container">
+                <div class="card-proccess">
+                    
+                    <h3>Ingredients</h3>
+                    <div class="ingredients-text-container">
+                        <img class="img-ingredients" src="./assets/img/pngegg.png" alt="Ingredients"> 
+                    <ul class="list-proccess list-100">
+                        <li class="list-item-proccess">4 large eggs</li>
+                        <li class="list-item-proccess">1/4 cup whole milk</li>
+                        <li class="list-item-proccess">1/4 teaspoon kosher salt</li>
+                        <li class="list-item-proccess">2 tablespoons unsalted butter</li>
+                    </ul>
+                    </div>
+                </div>
+                <div class="instructions-text-container">
+                    <h3>Instructions</h3>
+                    <ul class="list-proccess list-100">
+                        <li class="list-item-proccess"><input type="checkbox"/> Beat the eggs and milk until light and frothy</li>
+                        <li class="list-item-proccess"><input type="checkbox"/>Heat a nonstick skillet over medium heat. </li>
+                        <li class="list-item-proccess"><input type="checkbox"/>Add the butter</li>
+                        <li class="list-item-proccess"><input type="checkbox"/>Pour in the eggs. Let them set for a few seconds</li>
+                        <li class="list-item-proccess"><input type="checkbox"/>Use a spatula to push the cooked eggs from the edge of the skillet toward the center</li>
+                        <li class="list-item-proccess"><input type="checkbox"/>When the eggs are mostly set but still soft, fold in half</li>
+                        <li class="list-item-proccess"><input type="checkbox"/>Slide the omelette onto a plate</li>
+                    </ul>
+                </div>
+
+                <div class="card-proccess">
+                    
+                    <h3>Nutrition Facts</h3>
+                    <div class="ingredients-text-container">
+                        <img class="img-ingredients" src="./assets/img/klipartz.com.png" alt="nutrition"> 
+                    <ul class="list-proccess list-100">
+                        <li class="list-item-proccess">Calories: 292kcal</li>
+                        <li class="list-item-proccess">Carbohydrates: 1g</li>
+                        <li class="list-item-proccess">Protein: 13g</li>
+                        <li class="list-item-proccess">Fat: 26g</li>
+                    </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <!--Highlight youtube & lottie-->
+    <section class="highlight-container">
+
+        <div class="highlight">
+            <div class="highlight-text-container">
+                <h1>Cook an Omelette <br><span>Like a Pro</span></h1>
+                <div class="lottie-container">
+                    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                    <lottie-player class="lottie-player" src="https://assets3.lottiefiles.com/packages/lf20_UMQnav3O4h.json"  background="transparent"  speed="1" loop autoplay></lottie-player>
+                </div>
+            </div>
+            <div class="video-youtube-highlight-container">
+                <iframe src="https://www.youtube.com/embed/bF4bp-lRbDg?si=DdrYaucudpJMkTCA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer-->
+    <footer class="footer">
+        <!--social icons-->
+        <div class="social-icons-container">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-pinterest-p"></i></a>
+        </div>
+        <!--footer bar-->
+        <div class="footer-bar-container">
+        <h4>Claudia Lara 2024 © - FSJ25</h4>
+        </div>
+
+    </footer>
+
+<!--    
+≽^• ˕ • ྀི≼ cleolart.com - Claudia Lara
+-->
+</body>
+</html>

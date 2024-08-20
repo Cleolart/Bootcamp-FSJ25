@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body{
+    background-color: #f1f2f2;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- container ---*/
+.container{
+    margin: 0 auto;
+    width: 90%;
+    padding: 1rem;
+}
+/* --- header ---*/
+.container > .header{
+    text-align: center;
+}
+
+/* --- img logo svg ---*/
+.container .header .img-container{
+    height: 10vh;
+}
+
+.container .header .img-container .img-logo{
+    height: 5vh;
+    transition: transform 0.3s ease;
+}
+
+.container .header .img-container .img-logo:hover {
+    transform: scale(1.05);
+}
+
+/* --- navbar ---*/
+.container .header .navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    margin: auto;
+    height: 7vh;
+    font-weight: 700;
+    font-size: 0.9em;
+}
+
+/* --- transition navbar items--- */
+.container .header .navbar .nav-item {
+    color: #272727;
+    text-decoration: none;
+    font-size: 1em;
+    position: relative;
+    display: inline-block;
+    transition: color 0.5s, font-size 0.5s;
+}
+
+.container .header .navbar .nav-item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 1.2em;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: orange;
+    transition: width 0.5s;
+}
+
+.container .header .navbar .nav-item:hover {
+    color: orange;
+    font-size: 1.2em;
+}
+
+.container .header .navbar .nav-item:hover::after {
+    width: 100%;
+}
+
+/* --- main container --- */
+.container .main-container{
+    text-align: center;
+    padding: 0;
+}
+
+.container .main-container .main-text-container{
+    color: #2b2b2b;
+    padding: 5vh;
+}
+
+/* --- title h2 --- */
+.container .main-container .main-text-container h2{
+    font-size: 1.7em;
+}
+
+/*banner*/
+
+.container .main-container .main-text-container p{
+    color: rgb(117, 117, 117);
+    font-size: 1em;
+}
+
+.container .main-container .banner {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background-image: url('../img/omelette-de-atun-receta-web.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .container .main-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    z-index: 1;
+  }
+  
+  .container .main-container .banner-title {
+    position: relative;
+    z-index: 2;
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    padding: 0 20px;
+    margin: 0;
+  }
+  
+/* card container - general*/
+.container .main-container .main-card-container{
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+/*cards*/
+  
+.main-container .main-card-container .card {
+    width: calc(33.33% - 62px);
+    margin: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .main-container .main-card-container .card h4{
+    color: #868686;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 0.8em;
+  }
+  .main-container .main-card-container .card h2{
+    margin: 0;
+    padding: 0;
+  }
+
+  /* h2 & P*/
+
+  .container .main-container .main-text-container article{
+    width: 80%;
+    margin: 0 auto;
+}
+  .container .main-container .main-text-container p{
+    color: rgb(117, 117, 117);
+    font-size: 1em;
+}
+
+/*icons*/
+.custom-icon{
+    color: #E8A600;
+    padding: 1vw 2vw;
+
+}
+/*Ingredients card*/
+.container .proccess-text-container {
+
+    width: 80%;
+    margin: auto;
+}
+
+/*Ingredients container*/
+.container .proccess-text-container .card-proccess .ingredients-text-container{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+       
+}
+/*img right*/
+.img-ingredients {
+    width: 50%;
+    margin-right: 5vw;
+}
+
+h3 {
+    color: #E8A600;
+    margin: 5vw;
+    font-size: 1.5em;
+}
+
+/*list*/
+.list-proccess{
+    text-align: right;
+    margin: 0;
+    padding: 0;
+}
+/*instructions*/
+.container .proccess-text-container .instructions-text-container{
+    margin: auto;
+    width: 80%;
+}
+
+/*list border bottom for instructions, nutrition facts and ingredients*/
+.container .proccess-text-container .list-proccess .list-item-proccess{
+    text-align: left;
+    border-bottom: 1px solid #868686;
+    list-style-type: none;
+    line-height: 2em;
+}
+
+/*youtube video section*/
+
+.highlight-container{
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    padding: 2vh 0;
+    margin-top: 5vh;
+    background-color: #ffffff;
+}
+
+.highlight-container .highlight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin:auto;
+    padding: 5vh 0;
+}
+
+.highlight-container .highlight .video-youtube-highlight-container {
+    width: 70%;
+}
+
+.highlight-container .highlight h1{
+    font-size: 2em;
+}
+
+.highlight-container .highlight span{
+    font-size: 2em;
+    font-family: "Pacifico", cursive !important;
+    color: #E8A600;
+}
+
+/*this is the style for lottie*/
+.highlight-container .highlight .lottie-container {
+    margin: auto;
+}
+
+.highlight-container .highlight .lottie-container .lottie-player{
+  width: 30vw;
+  height: 30vh;
+}
+
+.video-youtube-highlight-container iframe {
+    width: 100%;
+    height: 450px;
+}
+
+/*Footer*/
+.footer .footer-bar-container {
+    color: rgb(185, 185, 185);
+    text-align: center;
+    background-color:#272727;
+
+    padding: 2vh 0 0 0;
+    height: 7vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.footer .footer-bar-container h4{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+/* social icons container + items */
+.footer .social-icons-container{
+    position: fixed;
+    bottom: 15%;
+    right: 16px;
+    z-index: 900;
+    height: 10vh;
+}
+
+
+.footer .social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 16px;
+    width: 35px;
+    height: 35px;
+    margin: 0.2vw;
+    background-color: #E8A600;
+    color: #272727;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.footer .social-icon:hover {
+    transform: scale(1.25);
+}
+
+
+/*hidden header responsive*/
+.responsive-header{
+    display: none;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------*/
+/*--- MERIA QUERIES ---*/
+
+/*tablets*/
+@media (min-width: 751px) and (max-width:992px){
+    .container .header .navbar{
+        width: 50vw;
+    }
+    .highlight-container .highlight .highlight-text-container .lottie-container {
+        display: none;
+    }
+    .highlight{
+        display: block !important;
+        width: 100%;
+        
+    }
+    .video-youtube-highlight-container, .highlight-container .highlight .video-youtube-highlight-container {
+        width: 100%;
+    }
+
+}
+
+/* 310 - 750 px */
+@media (min-width: 310px) and (max-width: 750px){
+    .container .header,
+    .highlight-container .highlight .highlight-text-container .lottie-container {
+        display: none;
+    }
+
+    .responsive-header{
+        display: block;
+
+    }
+
+    .container .main-container{
+        margin-top: 15vh;
+    }
+
+    .container .main-container .main-text-container article, 
+    .container .main-container .main-card-container .card,
+    .container .main-container .main-card-container,
+    .container .proccess-text-container,
+    .container .proccess-text-container .ingredients-text-container,
+    .container .proccess-text-container .instructions-text-container,
+    .list-100, .video-youtube-highlight-container, .highlight-container .highlight .video-youtube-highlight-container {
+        width: 100%;
+    }
+
+    .highlight{
+        display: block !important;
+        width: 100%;
+        
+    }
+}
+
+
+/*cellphone L - provisional to the future*/
+@media (min-width: 530px) and (max-width: 750px){
+
+
+}
+
+/*cellphones*/
+@media (min-width: 310px) and (max-width: 529px){
+    .img-ingredients{
+        width: 100%;
+        margin: 0;
+    }
+
+    .highlight-container .highlight h1{
+        font-size: 1.5em;
+    }
+    
+    .highlight-container .highlight span{
+        font-size: 1.7em;
+        font-family: "Pacifico", cursive !important;
+        color: #E8A600;
+    }
+
+
+}
