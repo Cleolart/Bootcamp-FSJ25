@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+.body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h5 {
+    font-size: 0.9em;
+    font-weight: 700;
+}
+
+p {
+    font-size: 0.9em;
+    margin: 0;
+}
+
+.chat-circle {
+    position: fixed;
+    background-color: #A83338;
+    border-radius: 50%;
+    width: 3.5em;
+    height: 3.5em;
+    cursor: pointer;
+    bottom: 1em;
+    right: 0.5em;
+    color: white;
+    font-size: 1.2em;
+    box-shadow: 0px 3px 5px rgba(75, 75, 75, 0.3);
+    z-index: 999;
+
+}
+
+.chat-circle:hover {
+    background-color: #c03c43;
+    /* Cambia el color al pasar el mouse */
+}
+
+.navbar {
+    background-color: #F1F1F1;
+    box-shadow: 0 0 5px rgba(117, 117, 117, 0.534);
+}
+
+.primary-container-navbar .navbar .container-fluid {
+    width: 95%;
+}
+
+
+/*Search container*/
+.search-container {
+    width: 45%;
+}
+
+/*Search input*/
+.search-box {
+    padding: 0.5vw 2.5rem 0.5vw 1rem;
+    border-radius: 30px 0 0 30px;
+}
+
+/*Search icon container */
+
+.search-container .input-group-text {
+    border-radius: 0 30px 30px 0px;
+    margin: 0;
+    background-color: #A83338;
+    border: none;
+}
+
+/*Search icon*/
+.search-container .input-group-text i {
+    color: white;
+}
+
+/*Seach focus*/
+.search-box:focus, .form-control:focus {
+    border: 1px solid #A83338;
+    box-shadow: 0 0 3px #A83338;
+}
+
+/*user + service + cart + country container*/
+.navbar-user-cart {
+    width: 30%;
+}
+
+.siman-red-icon i {
+    Color: #A83338;
+    font-size: 1.2em;
+}
+
+.rounded-pill {
+    border: white solid 1px;
+    font-size: 0.6em;
+}
+
+
+
+/*dropdown item style*/
+.dropdown-toggle {
+    font-size: 0.9em;
+    width: 6vw;
+    border: none;
+    background: none;
+}
+
+.dropdown-item {
+    font-size: 0.8em;
+}
+
+/*Navbar menu*/
+.navbar-toggler {
+    border: none;
+    color: #A83338;
+    font-size: 2em;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/*sub menu*/
+
+.submenu-content {
+    width: 95%;
+}
+
+.submenu-content a {
+    color: rgb(31, 31, 31);
+    text-decoration: none;
+    font-size: 0.85em;
+}
+
+/*MAIN*/
+
+/*button danger*/
+.btn-danger {
+    background-color: #A83338;
+    border-color: #A83338;
+    border-radius: 25px;
+}
+
+.btn-secondary, .btn-dark, .form-control {
+    border-radius: 25px;
+}
+
+/*accent font*/
+.accent-font {
+    font-family: 'Satisfy', cursive;
+    font-size: 1.5em;
+}
+
+/*card categories*/
+.card-categories, .card {
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.card-categories:hover {
+    transform: scale(1.05);
+}
+
+.card-categories:hover .card-text-categories {
+    visibility: hidden;
+}
+
+.cta-button-categories {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card-categories:hover .cta-button-categories {
+    opacity: 1;
+}
+
+/*highlights section*/
+.highlights-section {
+    background-color: #F1F1F1;
+    margin: 0;
+    padding: 0;
+}
+
+/*carousel invdividual cards*/
+.container .carousel .carousel-item .card, .card{
+    border: none;
+}
+
+/*Footer*/
+
+/*Chat*/
+
+.footer {
+    background-color: #F1F1F1;
+    color: #1f1f1f;
+}
+
+.footer-bar-container-2 {
+    color: #1f1f1f;
+    border-top: #1f1f1f solid 1px;
+}
+
+/*ESTO ES PARA EL FLOTANTE*/
+/* social icons container + items */
+.chat-container {
+    position: fixed;
+    bottom: 15%;
+    right: 16px;
+    z-index: 900;
+    height: 10vh;
+}
+
+
+/*-------*/
+
+
+/*footer list*/
+.footer .container li,
+.footer .container p {
+    font-size: 0.8em;
+    padding: 0 0 1em 0;
+    list-style-type: none;
+}
+
+/*phone number*/
+.phone-number a {
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #A83338;
+}
+
+/*suscribe input*/
+.footer .suscribe-text-input {
+    border-radius: 30px 0 0 30px;
+
+}
+
+.input-group-text {
+    border-radius: 0 30px 30px 0px;
+    margin: 0;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+/*suscribe input focus*/
+.suscribe-text-input:focus {
+    border: 1px solid white;
+    box-shadow: 0 0 3px white;
+}
+
+/*social icons*/
+.social-icon {
+    text-decoration: none;
+    font-size: 1.5em;
+    margin: 0.3vw;
+    color: #A83338;
+}
+
+/*accodrion */
+.accordion {
+    background-color: #F1F1F1;
+}
+
+.accordion-item{
+    background-color:#F1F1F1 !important;
+    border: none !important;
+}
+
+.accordion-button {
+    background-color:#F1F1F1!important;
+    color: #1f1f1f !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+
+
+/*MEDIA QUERIES*/
+
+/* general */
+@media (min-width: 576px) and (max-width: 1200px) {
+
+    /*categories cards*/
+    .categories-container .col {
+        flex: 0 0 25%;
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 575px) {
+
+    /*categories cards*/
+    .categories-container .col {
+        flex: 0 0 50%;
+    }
+
+}
+
+/******************************************/
+
+/* `sm` applies to x-small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+
+    /*Search container*/
+    .search-container {
+        width: 80%;
+    }
+
+    .navbar-user-cart {
+        width: 100vw;
+        padding: 1em;
+        justify-content: center !important;
+        align-items: center;
+    }
+
+
+}
+
+/* `md` applies to small devices (landscape phones, less than 768px)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    /*Search container*/
+    .search-container {
+        width: 80%;
+    }
+
+    .navbar-user-cart {
+        width: 100vw;
+        padding: 1em;
+        justify-content: center !important;
+        align-items: center;
+    }
+
+    /*button categories size*/
+    .categories-container .card-categories .cta-button-categories {
+        width: 75%;
+    }
+
+    .logo-footer {
+        width: 50%;
+    }
+
+}
+
+/* `lg` applies to medium devices (tablets, less than 992px)*/
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+/*** Navbar exclusive***/
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    .navbar-user-cart {
+        width: 36%;
+    }
+
+    /*Search container*/
+    .search-container,
+    .logo-footer {
+        width: 50%;
+    }
+
+
+
+}
+
+/* `xxl` applies to x-large devices (large desktops, less than 1400px)*/
+@media (min-width: 1200px) {
+    .logo-footer {
+        width: 25%;
+    }
+}
